@@ -1,0 +1,68 @@
+<<< Java Script code>>>
+----------------------------
+// assignment 1
+let arrMax = [10,30,70,20,90]
+let max = arrMax[0];
+arrMax.forEach((arrMax)=>{
+    if(arrMax>max)
+    max = arrMax;
+}  
+ );
+console.log(max);
+
+//assignment2
+
+let list=[1,2,3,4,5,6,7,8,10];
+let list1=[]
+list1 = list.map(
+    (element,index,list)=>{
+        return{
+            index,
+           list: element * 10,
+          
+        }
+    }
+)
+ console.log(list1)
+
+//assignment3
+
+let array = [1,2,3,4,5,6,7,8,9,10]
+let sumEvens = (array) =>{
+    let sum=0;
+    for(let i =0;i<=array.length;i++){
+       if(array[i]%2 ===0){
+      
+sum+=array[i];
+       }
+    }
+
+return sum;
+}
+
+console.log(sumEvens(array));
+
+// assignment 4
+
+const numbers1 = [4,-4,10,203,53,11];
+const min = numbers1.reduce((acc, val)=> val < acc?val :acc, numbers1[0]);
+console.log(min);
+
+<<< HTML Code >>>
+-----------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello world</h2>
+<script src="assignment.js"></script>
+
+   
+</body>
+</html>
